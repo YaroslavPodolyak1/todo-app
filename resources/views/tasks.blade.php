@@ -26,7 +26,7 @@
                                             <a class="btn-sm btn-warning" href="{{route('tasks.edit',$task->id)}}"><span class="oi oi-pencil"></span></a>
                                         </td>
                                         <td>
-                                            <a class="btn-sm btn-danger"><span class="oi oi-minus"></span></a>
+                                            <a class="btn-sm btn-danger" href="{{route('tasks.delete',$task->id)}}"><span class="oi oi-minus"></span></a>
                                         </td>
                                         <td>
                                             <a class="btn-sm btn-success"><span
