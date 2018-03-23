@@ -17,6 +17,11 @@ class TasksController extends Controller
         return view('tasks', compact('tasks'));
     }
 
+    public function show(Tasks $task): View
+    {
+        return view('tasks.show', compact('task'));
+    }
+
     public function create(): View
     {
         return view('tasks.create');
