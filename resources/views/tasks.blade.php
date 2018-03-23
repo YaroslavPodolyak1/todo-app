@@ -13,7 +13,7 @@
                                     <td>Название</td>
                                     <td>Описание</td>
                                     <td>Выполнен</td>
-                                    <td colspan="3">Операции</td>
+                                    <td colspan="4">Операции</td>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -32,8 +32,11 @@
                                                         class="oi oi-minus"></span></a>
                                         </td>
                                         <td>
-                                            <a class="btn-sm btn-success" href="{{route('tasks.show',$task->id)}}"><span
+                                            <a class="btn-sm btn-primary" href="{{route('tasks.show',$task->id)}}"><span
                                                         class="oi oi-magnifying-glass"></span></a>
+                                        </td>
+                                        <td>
+                                            <a class="btn-sm btn-success" href="{{route('tasks.completed',$task->id)}}"><span class="oi oi-task"></span></span></a>
                                         </td>
                                     </tr>
                                 @endforeach

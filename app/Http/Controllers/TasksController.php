@@ -52,4 +52,13 @@ class TasksController extends Controller
 
         return redirect('tasks');
     }
+
+    public function completed(Tasks $task)
+    {
+
+        $task->completed = 1;
+        $task->save();
+
+        return redirect('tasks');
+    }
 }

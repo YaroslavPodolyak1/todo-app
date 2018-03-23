@@ -18,5 +18,7 @@ Route::prefix('tasks')->name('tasks.')->middleware('auth')->group(function () {
     Route::get('delete/{task}', 'TasksController@delete')->name('delete');
 
     Route::get('show/{task}', 'TasksController@show')->name('show');
+
+    Route::get('completed/{task}', 'TasksController@completed')->name('completed');
 });
 
