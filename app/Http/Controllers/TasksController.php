@@ -29,4 +29,15 @@ class TasksController extends Controller
         return redirect('tasks');
     }
 
+    public function edit(Tasks $task): View
+    {
+        return view('tasks.edit', compact('task'));
+    }
+
+    public function update(StoreTask $request,Tasks $task)
+    {
+        $task->update($request->only('caption','description'));
+
+        return redirect('tasks');
+    }
 }
